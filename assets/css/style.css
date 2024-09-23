@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.wrapper {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 12px;
+  min-height: 88.9vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.background {
+  position: fixed;
+  width: 200%;
+  height: 200%;
+  top: -50%;
+  left: -50%;
+  z-index: -1;
+}
+.background__img {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  min-width: 50%;
+  min-height: 50%;
+  filter: blur(5px);
+  transform: scale(1.1);
+}
+
+.music-player__container {
+  background-color: rgba(231, 231, 231, 0.5607843137);
+  width: 19rem;
+  height: 28.25rem;
+  border-radius: 1.5rem;
+  margin: 30% 0;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+  transition: all 0.5s ease;
+}
+.music-player__container:hover {
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.8);
+}
+.music-player__img {
+  width: 14rem;
+  height: 14rem;
+  position: relative;
+  top: -50px;
+  left: 38px;
+}
+.music-player__cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 1.5rem;
+  width: 15rem;
+  height: 15rem;
+  opacity: 0;
+  box-shadow: 0 5px 30px 5px rgba(0, 0, 0, 0.5);
+}
+.music-player__cover:hover {
+  box-shadow: 0 5px 30px 5px rgba(0, 0, 0, 0.8);
+}
+.music-player__cover.active {
+  max-width: 100%;
+  max-height: 100%;
+  transition: all 0.5s;
+  opacity: 1;
+}
+.music-player__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: -1rem;
+}
+.music-player__title {
+  height: 3.5rem;
+  font-size: 22px;
+  font-weight: 500;
+  margin: 0 0 10px 0;
+  text-align: center;
+}
+.music-player__artist {
+  font-size: 15px;
+  font-weight: 500;
+}
+.music-player__bar {
+  margin: 1.9rem 0;
+  background-color: #212121;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 6px;
+  width: 80%;
+}
+.music-player__progress {
+  background-color: #fff;
+  border-radius: 5px;
+  height: 100%;
+  width: 0%;
+  transition: width 0.1s linear;
+}
+.music-player__duration {
+  position: relative;
+  top: -1.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+.music-player__controls {
+  display: flex;
+}
+.music-player__control {
+  cursor: pointer;
+  margin: 0 10px;
+  transition: all 1s ease;
+}
+.music-player__control.previous {
+  width: 50px;
+  height: 50px;
+  background-image: url("../img/svg/previous.png");
+  background-repeat: no-repeat;
+  transition: background-image 1s ease;
+}
+.music-player__control.previous:hover {
+  background-image: url("../img/svg/hover-previous.png");
+  background-repeat: no-repeat;
+  transition: background-image 1s ease;
+}
+.music-player__control.play {
+  width: 50px;
+  height: 50px;
+  background: url("../img/svg/play.png") no-repeat;
+}
+.music-player__control.play:hover {
+  background-image: url("../img/svg/hover-play.png");
+  background-repeat: no-repeat;
+  transition: background-image 1s ease;
+}
+.music-player__control.pause {
+  width: 50px;
+  height: 50px;
+  background: url("../img/svg/pause.png") no-repeat;
+}
+.music-player__control.pause:hover {
+  background-image: url("../img/svg/hover-pause.png");
+  background-repeat: no-repeat;
+  transition: background-image 1s ease;
+}
+.music-player__control.next {
+  width: 50px;
+  height: 50px;
+  background: url("../img/svg/next.png") no-repeat;
+}
+.music-player__control.next:hover {
+  background-image: url("../img/svg/hover-next.png");
+  background-repeat: no-repeat;
+  transition: background-image 1s ease;
+}
+
+.footer {
+  background-color: rgba(231, 231, 231, 0.5607843137);
+}
+.footer__container {
+  max-width: 1200px;
+  padding: 1.3rem 0;
+  margin: 0 auto;
+}
+@media (max-width: 1210px) {
+  .footer__container {
+    padding-left: 1.3rem;
+    padding-right: 1.3rem;
+  }
+}
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__logo {
+  width: 50px;
+  height: 50px;
+  transition: all 0.5s ease;
+}
+.footer__logo:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: all 0.5s ease;
+}
+.footer__copy {
+  font-size: 1.5rem;
+  margin-left: 0.7rem;
+}
+.footer__link {
+  font-size: 1.3rem;
+  color: #000;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+.footer__link:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: all 0.5s ease;
+}/*# sourceMappingURL=style.css.map */
