@@ -1,3 +1,3 @@
 # AudioPlayer
 
-[https://github.com/Daria-V1985/AudioPlayer/player#1](https://github.com/Daria-V1985/AudioPlayer/player#1/player#1/index.html)
+[https://daria-v1985.github.io/AudioPlayer/player#1](https://daria-v1985.github.io/AudioPlayer/player#1/player#1/index.html)
