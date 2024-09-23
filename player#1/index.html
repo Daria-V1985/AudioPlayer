@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/app.js" defer></script>
+  <title>Music player</title>
+</head>
+<body>
+
+  <audio src="" id="audio"></audio>
+  
+  <div class="wrapper">
+    <div class="background">
+      <img class="background__img" id="bg-img" src="assets/img/1_the_charmers_call.jpg" alt="Background">
+    </div>
+    <div class="music-player">
+      <div class="music-player__container">
+        <div class="music-player__img">
+          <img class="music-player__cover active" id="cover" src="assets/img/1_the_charmers_call.jpg" alt="Background mini">
+        </div>
+        <div class="music-player__info">
+          <h1 class="music-player__title" id="title">The Charmer's Call</h1>
+          <p class="music-player__artist" id="artist">Hanu Dixit</p>
+          <div class="music-player__bar" id="player-bar">
+            <div class="music-player__progress" id="progress"></div>
+            <div class="music-player__duration">
+              <span class="music-player__start-time" id="start-time">00:00</span>
+              <span class="music-player__end-time" id="duration">00:00</span>
+            </div>
+          </div>
+          <div class="music-player__controls">
+            <div class="music-player__control previous" id="prev" title="Prev" alt="prev"></div>
+            <div class="music-player__control play" id="play" title="Play" alt="play"></div>
+            <div class="music-player__control next" id="next" title="Next" alt="next"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
